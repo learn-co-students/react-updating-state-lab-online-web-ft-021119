@@ -31,11 +31,12 @@ class YouTubeDebugger extends Component{
  	})
  }
  handleClick2 = () => {
-
+// A QUESTION about bitrate.
  	this.setState({
  		
  			settings: { 
- 				bitrate: 8,
+ 			...this.state.settings,	
+            
  				video: {
    ...this.state.settings.video,
 
